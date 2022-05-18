@@ -1,0 +1,39 @@
+.jumbotron {
+    padding: 2rem 1rem;
+}
+
+.navbar {
+    background-color: rgb(77, 64, 197);
+}
+
+.nav-item {
+    margin-left: 50pt;
+    margin-right: 50pt;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+    margin-top: 2px;
+    text-align: center;
+    color: white;
+    background-color: rgb(77, 64, 197);
+}
+
+#navbar {
+    background: green;
+    padding: 10px;
+}
+
+#navbar a {
+    color: white;
+    padding: inherit;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

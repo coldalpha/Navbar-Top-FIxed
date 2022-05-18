@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Hardifal.com</title>
+
+    <!-- css start -->
+    <style type="text/css">
+        #navbar {
+            background: green;
+            padding: 10px;
+        }
+        
+        #navbar a {
+            color: white;
+            padding: inherit;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+    <!-- css end -->
+</head>
+
+<body>
+    <!-- content -->
+    <h1>Contoh membuat navbar fixed top ketika di scroll</h1>
+
+    <nav id="navbar">
+        <a href="#" class="active">home</a>
+        <a href="#">menu 1</a>
+        <a href="#">menu 2</a>
+    </nav>
+
+    <br />lorem ipsum <br /><br />lorem ipsum <br /><br />lorem ipsum
+    <br /><br />lorem ipsum <br /><br />lorem ipsum <br /><br />lorem ipsum
+    <br /><br />lorem ipsum <br /><br />lorem ipsum <br /><br />lorem ipsum
+    <br /><br />lorem ipsum <br /><br />lorem ipsum <br /><br />lorem ipsum
+    <br /><br />lorem ipsum <br /><br />lorem ipsum <br /><br />lorem ipsum
+    <br /><br />lorem ipsum <br /><br />lorem ipsum <br /><br />lorem ipsum
+    <br /><br />lorem ipsum <br /><br />lorem ipsum <br />
+    <!-- content -->
+
+    <!-- javascript -->
+    <script>
+        window.onscroll = function() {
+            myFunction();
+        };
+
+        var widget = document.getElementById("navbar");
+        var sticky = widget.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                widget.classList.add("sticky");
+            } else {
+                widget.classList.remove("sticky");
+            }
+        }
+    </script>
+    <!-- javascript end -->
+</body>
+
+</html>
